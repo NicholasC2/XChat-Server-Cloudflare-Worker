@@ -10,7 +10,30 @@
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"d1_databases": [
+		{
+			"binding": "XChat",
+			"database_name": "XChat",
+			"database_id": "5d9778be-1468-47ab-8464-c33eed2428c5"
+		}
+	],
+
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "CHAT",
+				"class_name": "ChatServer"
+			}
+		]
+	},
+
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": ["ChatServer"]
+		}
+	]
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

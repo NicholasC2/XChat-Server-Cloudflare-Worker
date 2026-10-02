@@ -1,1 +1,0 @@
-# XChat-Server-Cloudflare-Worker
